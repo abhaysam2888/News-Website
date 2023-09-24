@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <!-- tailwind cli -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./Screenshot 2023-09-24 130745.png" type="image/x-icon">
+</head>
+<body>
+    <!-- header started -->
+    <header>
+        <!-- nav started -->
+        <nav class="flex justify-between items-center bg-amber-200 h-20">
+            <!-- nav logo -->
+            <div>
+                <a href="./index.html">
+                    <img src="./images/Screenshot 2023-09-24 130745.png" alt="" class="rounded-full w-16">
+                </a>
+            </div>
+            <!-- nav links -->
+            <div class="ml-40 max-[507px]:ml-0">
+                <ol class="flex space-x-7 font-semibold text-xl max-md:hidden">
+                    <li class="hover:text-blue-700" id="ipl">IPL</li>
+                    <li class="hover:text-blue-700" id="finance">Finance</li>
+                    <li class="hover:text-blue-700" id="politics">Politics</li>
+                    <li class="hover:text-blue-700 max-[870px]:hidden" id="technology">Technology</li>
+                </ol>
+            </div>
+            <!-- nav search bar -->
+            <div>
+                <input type="search" name="" id="searchInput" placeholder="e.g. Sceince" class="py-1 pl-2 border border-blue-300 rounded-md max-[360px]:w-32">
+                <button type="submit" class="bg-blue-700 px-5 py-1 text-white font-semibold rounded-md" id="searchBtn">Search</button>
+            </div>
+        </nav>
+    </header>
+    <!-- main section started -->
+    <main>
+        <div class="flex flex-wrap justify-center items-center mt-10 w-[100%]" id="cards-container">
+
+        </div>
+    </main>
+
+    <template id="card-template">
+        <!-- news card started -->
+        <div class="w-[360px] border min-h-[400px] overflow-hidden rounded-b-lg hover:-translate-y-2 transition-all mt-10 max-md:w-[300px] mx-5" id="card">
+            <!-- image -->
+            <div>
+                <img src="" alt="" class="w-full h-[180px] object-cover" id="cardImg">
+            </div>
+            <!-- heading -->
+            <div class="font-bold p-3 text-xl h-[76px]">
+                <h1 class="overflow-hidden text-ellipsis" style="display: -webkit-box; -webkit-box-orient: vertical;-webkit-line-clamp:2;" id="cardHeading"></h1>
+            </div>
+            <!-- date -->
+            <div class="p-3" id="cardDate">
+                <p>
+                    <span id="cardScouce" class="text-red-600 font-semibold"></span>
+                    <span id="CardDate"></span>
+                </p>         
+            </div>
+            <!-- article text -->
+            <div class="p-3 font-medium h-[180px]">
+                <h1 class="overflow-hidden text-ellipsis" style="display: -webkit-box; -webkit-box-orient: vertical;-webkit-line-clamp:6;" id="cardDespription"></h1>
+            </div>
+        </div>
+    </template>
+    <footer></footer>
+</body>
+<!-- script js -->
+<script src="./script.js"></script>
+</html>
