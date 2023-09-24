@@ -42,7 +42,7 @@ To set up the News App project locally, follow these steps:
 
 1. Clone this repository:
    ```shell
-   git clone https://github.com/your-username/news-app.git
+   git clone https://github.com/abhaysam2888/News-Website.git
 
 2. Navigate to the project folder:
 
